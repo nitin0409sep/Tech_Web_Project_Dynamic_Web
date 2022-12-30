@@ -1,0 +1,44 @@
+<section id="contact_us_section" class="py-5 background1">
+    <div class="container">
+        <h3 class="text-center text-dark">Contact Us</h3>
+        <div class="row">
+            <div class="col-md-12">
+
+                <form action="/contact_us" method="post">
+
+                    {{!-- Email Address --}}
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Your Email Address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                            aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text" style="color:black;">We'll never share your email with
+                            anyone else.</div>
+                    </div>
+
+                    {{!-- Contact Number --}}
+                    <div class="mb-3">
+                        <label for="contactNumberField" class="form-label">Your Contact Number</label>
+                        <input type="number" class="form-control" name="phone" id="exampleInputPassword1">
+                    </div>
+
+
+                    {{!-- Text Area --}}
+                    <div class="form-floating my-2">
+                        <textarea style="height:250px" class="form-control" name="message"
+                            placeholder="Enter Your Query Here..." id="queryField"></textarea>
+                        <label for="queryField" style="color:black;">Your Query</label>
+                    </div>
+
+
+                    {{!-- Submit Button --}}
+                    <div class="container text-center">
+                        <button type="submit" class="btn btn-dark" onclick="preventBack()">Submit</button>
+                    </div>
+
+                </form>
+
+
+            </div>
+        </div>
+    </div>
+</section>
